@@ -45,4 +45,4 @@ cinnamonという、perlで書かれたシンプルなデプロイツールが�
 	    },
 	};
 
-これで、cinnamon production deploy:update とやると、5,6の手順をまとめてやってくれる。楽になりました。
+これで、cinnamon production:deployとやると、5,6の手順をまとめてやってくれる。楽になりました。

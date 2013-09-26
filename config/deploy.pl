@@ -20,11 +20,7 @@ task deploy  => {
         my $deploy_from = get('deploy_from');
         my $deploy_to = get('deploy_to');
         my $branch   = 'origin/' . get('branch');
-        run "cd $deploy_from";
-        run "/usr/bin/git add *";
-        run "/usr/bin/git commit -m 'deploy new entry'";
-        run "/usr/bin/git push origin master";
-        uremote {
+        remote {
             run "cd $deploy_to && git pull && ~/perl5/perlbrew/perls/perl-5.16.2/bin/riji publish";
         } $host;
     },

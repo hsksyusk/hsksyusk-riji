@@ -26,4 +26,4 @@ executeを使うと吉。
 
 設定ファイルとして呼ばれるときは下3行は無視されるから、`fab -H host-c.net hostname`みたいにも使える。
 
-via. (http://docs.fabfile.org/en/1.8/api/core/tasks.html#fabric.tasks.execute)
+via. [Tasks — Fabric 1.8 documentation](http://docs.fabfile.org/en/1.8/api/core/tasks.html#fabric.tasks.execute)
